@@ -6,7 +6,6 @@ const handler = NextAuth({
     providers: [
         GoogleProvider({
             clientId: <clientid>,
-            clientSecret: <clientsecret>,
         }),
     ],
     callbacks: {
