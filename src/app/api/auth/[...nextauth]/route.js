@@ -3,11 +3,7 @@ import GoogleProvider from 'next-auth/providers/google'
 import clientPromise from "../../../lib/mongodb";
 
 const handler = NextAuth({
-    providers: [
-        GoogleProvider({
-            clientId: <clientid>,
-        }),
-    ],
+
     callbacks: {
         async signIn({credentials,profile,email,account,user}) {
         const client = await clientPromise;
